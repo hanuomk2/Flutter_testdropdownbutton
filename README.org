@@ -1,0 +1,46 @@
+#+TITLE:	README for test_dropdownbutton on Flutter
+#+AUTHOR:	hanuomk2(odaba)
+#+DATE:		2023-12-08
+
+* test_dropdownbutton on Flutter
+
+ドロップダウンボタンから任意の項目を選択すると、
+選択した項目に合わせてテキストを表示する
+プログラムです。Flutterで作っています。
+
+けど、本当にしたかったのは、
+ドロップダウンボタンを別ファイルにして、
+メインファイル(main.dart)から呼び出すことです。
+
+よくRiverpodを使って、状態管理している例とかありますが、
+そこまで必要ない場合のサンプルです。
+
+以下の2ファイルから構成されます。
+main.dart
+dropdownbutton.dart
+
+dropdownbutton.dartへのデータの引き渡しは
+コンストラスタの引数で、input_paramとoutput_func
+を指定しています。
+
+input_paramはList型で入力してるのが
+なんとなく分かると思います。
+
+output_funcは関数を指定することで、
+dropdownbutton.dartにて、
+ドロップダウンボタンを選択時(onChanged)に
+output_funcに選択した値を引き渡しているのが、
+分かると思います。
+
+** 開発環境
+
+ - MacBook Pro(14-inch 2021)
+ - MacOS Ventura 13.5.2
+ - Flutter 3.13.0
+ - dart 3.10
+ - Pixel_3a_API_34_extension_level_7_arm64_v8a
+
+** ライセンス
+
+ Apache License 2.0
+
